@@ -1,0 +1,66 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no           
+  become: yes
+  become_user: "{{ user }}"
+
+  vars:
+    user: "{{ lookup('env', 'USER') }}"
+
+    homebrew_taps:
+      - caskroom/cask
+      - sanemat/font
+
+    homebrew_packages:
+      - { name: ansible }
+      - { name: colordiff }
+      - { name: coreutils }
+      - { name: doxygen }
+      - { name: git }
+      - { name: graphviz }
+      - { name: htop-osx }
+      - { name: jq }
+      - { name: ricty, install_options: [powerline, vim-powerline] }
+      - { name: zsh }
+      - { name: zsh-completions }
+      - { name: zsh-syntax-highlighting }
+
+    homebrew_cask_packages:
+      - macdown
+
+  tasks:
+    # brew tap
+    - name: install taps of homebrew
+      homebrew_tap: tap="{{ item }}" state=present
+      with_items: '{{homebrew_taps}}'
+
+    # update homebrew
+    - name: update homebrew
+      homebrew: update_homebrew=yes
+
+    # brew instal
+    - name: install homebrew packages
+      homebrew: name="{{ item.name }}" state="{{ item.state|default('latest') }}" install_options="{{ item.install_options|default() }}"
+      with_items: '{{homebrew_packages}}'
+
+    # brew cask install
+    - name: update brew-cask
+      homebrew: name=brew-cask state=latest
+    - name: install homebrew cask packages
+      homebrew_cask: name="{{ item }}" state=present
+      with_items: '{{homebrew_cask_packages}}'
+
+    # install Ricty font
+    - name: install xquartz
+      homebrew_cask: name=xquartz
+    - name: install ricty
+      homebrew: name=ricty
+    - name: copy generated font file
+      shell: "cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts/"
+      args:
+        creates: ~/Library/Fonts/Ricty-Bold.ttf
+      notify: run fc-cache
+
+  handlers:
+    - name: run fc-cache
+      shell: fc-cache -vf
