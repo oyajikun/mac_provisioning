@@ -16,6 +16,7 @@
       - { name: colordiff }
       - { name: coreutils }
       - { name: doxygen }
+      - { name: gibo }
       - { name: git }
       - { name: graphviz }
       - { name: htop-osx }
