@@ -28,6 +28,7 @@
       - { name: zsh-syntax-highlighting }
 
     homebrew_cask_packages:
+      - cheatsheet
       - macdown
 
   tasks:
