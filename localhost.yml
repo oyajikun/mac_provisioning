@@ -18,6 +18,7 @@
       - { name: doxygen }
       - { name: gibo }
       - { name: git }
+      - { name: git-secrets }
       - { name: graphviz }
       - { name: htop-osx }
       - { name: jq }
