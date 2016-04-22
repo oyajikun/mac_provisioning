@@ -12,6 +12,10 @@
       - sanemat/font
 
     homebrew_packages:
+      - { name: lua }
+      - { name: readline }
+      - { name: openssl }
+      - { name: openssl, state: linked, install_options: force }
       - { name: ansible }
       - { name: colordiff }
       - { name: coreutils }
@@ -23,6 +27,7 @@
       - { name: htop-osx }
       - { name: jq }
       - { name: ricty, install_options: [powerline, vim-powerline] }
+      - { name: vim, install_options: with-lua }
       - { name: zsh }
       - { name: zsh-completions }
       - { name: zsh-syntax-highlighting }
