@@ -14,8 +14,7 @@
     homebrew_packages:
       - { name: lua }
       - { name: readline }
-      - { name: openssl }
-      - { name: openssl, state: linked, install_options: force }
+      - { name: openssl, state: linked }
       - { name: ansible }
       - { name: colordiff }
       - { name: coreutils }
