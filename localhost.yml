@@ -26,7 +26,7 @@
       - { name: htop-osx }
       - { name: jq }
       - { name: ricty, install_options: [powerline, vim-powerline] }
-      - { name: vim, install_options: with-lua }
+      - { name: vim, install_options: [devel, with-lua] }
       - { name: zsh }
       - { name: zsh-completions }
       - { name: zsh-syntax-highlighting }
