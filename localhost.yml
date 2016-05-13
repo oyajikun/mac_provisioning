@@ -88,6 +88,18 @@
     - name: install anyenv-git
       git: repo=https://github.com/znz/anyenv-git.git dest={{ anyenv_dir }}/plugins/anyenv-git version="master"
 
+    # install jenv by anyenv
+    - name: install jenv by anyenv
+      shell: "anyenv install -s jenv"
+
+    # apply anyenv
+    - name: apply anyenv
+      shell: "exec $SHELL -L"
+
+    # install java by jenv
+    - name: jenv add java8
+      shell: "jenv add $(/usr/libexec/java_home -v '1.8')"
+
   handlers:
     - name: run fc-cache
       shell: fc-cache -vf
