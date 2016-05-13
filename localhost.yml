@@ -13,6 +13,7 @@
 
     homebrew_taps:
       - caskroom/cask
+      - caskroom/versions
       - sanemat/font
 
     homebrew_packages:
@@ -41,6 +42,7 @@
       - firefox
       - google-chrome
       - intellij-idea
+      - java
       - macdown
 
   tasks:
