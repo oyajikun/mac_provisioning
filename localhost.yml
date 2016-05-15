@@ -92,6 +92,10 @@
     - name: install jenv by anyenv
       shell: "anyenv install -s jenv"
 
+    # install sbtenv by anyenv
+    - name: install sbtenv by anyenv
+      shell: "anyenv install -s sbtenv"
+
     # apply anyenv
     - name: apply anyenv
       shell: "exec $SHELL -L"
