@@ -93,6 +93,10 @@
     - name: install jenv by anyenv
       shell: "anyenv install -s jenv"
 
+    # install scalaenv by anyenv
+    - name: install scalaenv by anyenv
+      shell: "anyenv install -s scalaenv"
+
     # install sbtenv by anyenv
     - name: install sbtenv by anyenv
       shell: "anyenv install -s sbtenv"
