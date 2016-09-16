@@ -1,0 +1,22 @@
+# Tap external Homebrew Cask repositories.
+homebrew_cask_repositories:
+  - caskroom/versions
+  - sanemat/font
+
+# Managed Homebrew Cask packages.
+#
+# e.g.
+# - package_name
+# or
+# { name: package_name, state: package_state }
+#
+# state choices: [present, absent, installed, uninstalled] (default: present)
+homebrew_cask_packages:
+  - cheatsheet
+  - clion
+  - firefox
+  - google-chrome
+  - intellij-idea
+  - java
+  - macdown
+

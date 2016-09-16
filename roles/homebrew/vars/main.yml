@@ -1,0 +1,20 @@
+homebrew_packages:
+  - lua
+  - readline
+  - { name: openssl, state: linked, install_options: force }
+  - ansible
+  - colordiff
+  - coreutils
+  - doxygen
+  - gibo
+  - git
+  - git-secrets
+  - graphviz
+  - htop-osx
+  - jq
+  - { name: ricty, install_options: [powerline, vim-powerline] }
+  - tree
+  - { name: vim, install_options: [devel, with-lua] }
+  - zsh
+  - zsh-completions
+  - zsh-syntax-highlighting
