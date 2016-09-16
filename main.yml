@@ -6,6 +6,7 @@
   roles:
     - homebrew
     - homebrew-cask
+    - ricty-font
 
   vars:
     user: "{{ lookup('env', 'USER') }}"
@@ -15,17 +16,6 @@
     anyenv_dir: "{{ home_dir }}/.anyenv"
 
   tasks:
-    # install Ricty font
-    - name: install xquartz
-      homebrew_cask: name=xquartz
-    - name: install ricty
-      homebrew: name=ricty
-    - name: copy generated font file
-      shell: "cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts/"
-      args:
-        creates: ~/Library/Fonts/Ricty-Bold.ttf
-      notify: run fc-cache
-
     # install anyenv
     - name: install anyenv
       git: repo=https://github.com/riywo/anyenv dest={{ anyenv_dir }} version="master"
@@ -51,7 +41,3 @@
     # apply anyenv
     - name: apply anyenv
       shell: "exec $SHELL -L"
-
-  handlers:
-    - name: run fc-cache
-      shell: fc-cache -vf
