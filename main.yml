@@ -8,37 +8,7 @@
     - homebrew-cask
     - ricty-font
     - vim
+    - anyenv
 
   vars:
     user: "{{ lookup('env', 'USER') }}"
-
-    home_dir: "/Users/{{ user }}"
-
-    anyenv_dir: "{{ home_dir }}/.anyenv"
-
-  tasks:
-    # install anyenv
-    - name: install anyenv
-      git: repo=https://github.com/riywo/anyenv dest={{ anyenv_dir }} version="master"
-    - name: make anyenv plugins directory
-      file: path={{ anyenv_dir }}/plugins state=directory
-    - name: install anyenv-udpate
-      git: repo=https://github.com/znz/anyenv-update.git dest={{ anyenv_dir }}/plugins/anyenv-update version="master"
-    - name: install anyenv-git
-      git: repo=https://github.com/znz/anyenv-git.git dest={{ anyenv_dir }}/plugins/anyenv-git version="master"
-
-    # install jenv by anyenv
-    - name: install jenv by anyenv
-      shell: "anyenv install -s jenv"
-
-    # install scalaenv by anyenv
-    - name: install scalaenv by anyenv
-      shell: "anyenv install -s scalaenv"
-
-    # install sbtenv by anyenv
-    - name: install sbtenv by anyenv
-      shell: "anyenv install -s sbtenv"
-
-    # apply anyenv
-    - name: apply anyenv
-      shell: "exec $SHELL -L"
