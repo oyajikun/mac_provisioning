@@ -19,5 +19,6 @@ homebrew_cask_packages:
   - intellij-idea
   - java
   - macdown
+  - ngrok
   - xquartz
 
