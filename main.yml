@@ -4,8 +4,8 @@
   become: yes
   become_user: "{{ user }}"
   roles:
-    - homebrew
     - homebrew-cask
+    - homebrew
     - ricty-font
     - vim
     - anyenv
