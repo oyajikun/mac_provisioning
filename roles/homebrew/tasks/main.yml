@@ -2,6 +2,10 @@
 - name: Update Homebrew
   homebrew: update_homebrew=yes
 
+# 全モジュールを upgrade する
+- name: common | brew upgrade all
+  homebrew: upgrade_all=yes
+
 - name: Install/Upgrade Homebrew packages
   homebrew: >
     name={{ item.name | default(item) }}
