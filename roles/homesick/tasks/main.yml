@@ -1,0 +1,10 @@
+---
+- name: install
+  become: yes
+  shell: "sudo gem install homesick"
+
+- name: git clone
+  shell: "homesick clone https://github.com/oyajikun/dotfiles.git"
+
+- name: symlink
+  shell: "homesick symlink dotfiles"
