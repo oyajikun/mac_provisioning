@@ -6,9 +6,15 @@
   roles:
     - homebrew-cask
     - homebrew
-    - ricty-font
-    - vim
-    - anyenv
+    # one time
+    #- git-secrets
+    # one time
+    #- homesick
+    # one time
+    #- ricty-font
+    #- vim
+    # one time
+    #- anyenv
 
   vars:
     user: "{{ lookup('env', 'USER') }}"
