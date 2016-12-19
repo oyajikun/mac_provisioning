@@ -14,11 +14,19 @@ homebrew_cask_repositories:
 homebrew_cask_packages:
   - cheatsheet
   - clion
+  - docker
+  - dropbox
+  - evernote
   - firefox
   - google-chrome
+  - google-drive
+  - google-japanese-ime
   - intellij-idea
   - java
   - macdown
   - ngrok
+  - slack
+  - skitch
+  - skype
   - xquartz
 
