@@ -1,0 +1,9 @@
+- name: install git secrets on global
+  shell: "git secrets --install ~/.git-templates/git-secrets"
+
+- name: set git secrets config on global
+  shell: "git config --global init.templatedir '~/.git-templates/git-secrets'"
+
+- name: register aws secrets on global
+  shell: "git secrets --register-aws --global"
+
