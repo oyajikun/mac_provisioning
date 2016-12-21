@@ -12,14 +12,20 @@
   git: repo=https://github.com/znz/anyenv-git.git dest={{ anyenv_dir }}/plugins/anyenv-git version="master"
 
 - name: install jenv by anyenv
-  shell: "anyenv install -s jenv"
+  shell: anyenv install -s jenv
 
 - name: install scalaenv by anyenv
-  shell: "anyenv install -s scalaenv"
+  shell: anyenv install -s scalaenv
 
 - name: install sbtenv by anyenv
-  shell: "anyenv install -s sbtenv"
+  shell: anyenv install -s sbtenv
 
 - name: apply anyenv
-  shell: "exec $SHELL -L"
+  shell: exec $SHELL -L
+
+- name: exec /usr/libexec/java_home
+  shell: /usr/libexec/java_home
+  register: latest_java_home
+- name: add latest Java to jenv
+  shell: jenv add {{ latest_java_home.stdout }}
 
