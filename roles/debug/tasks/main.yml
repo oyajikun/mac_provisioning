@@ -1,0 +1,7 @@
+- name: exec /usr/libexec/java_home
+  shell: /usr/libexec/java_home
+  register: result
+- name: debug result var
+  debug: var=result.stdout
+- name: echo
+  command: echo {{ result.stdout }}

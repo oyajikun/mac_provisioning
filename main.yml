@@ -4,17 +4,19 @@
   become: yes
   become_user: "{{ user }}"
   roles:
-    - homebrew-cask
-    - homebrew
+    #- homebrew-cask
+    #- homebrew
     # one time
     #- git-secrets
     # one time
     #- homesick
     # one time
     #- ricty-font
+    # one time
     #- vim
     # one time
     #- anyenv
+    #- debug
 
   vars:
     user: "{{ lookup('env', 'USER') }}"
