@@ -4,7 +4,7 @@
   shell: "sudo gem install homesick"
 
 - name: git clone
-  shell: "homesick clone https://github.com/oyajikun/dotfiles.git"
+  shell: "homesick clone git@private.github.com:oyajikun/dotfiles.git"
 
 - name: symlink
   shell: "homesick symlink dotfiles"
