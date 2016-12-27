@@ -3,6 +3,7 @@ homebrew_packages:
   - readline
   - { name: openssl, state: linked, install_options: force }
   - ansible
+  - apache-spark
   - colordiff
   - coreutils
   - doxygen
