@@ -12,6 +12,8 @@ homebrew_cask_repositories:
 #
 # state choices: [present, absent, installed, uninstalled] (default: present)
 homebrew_cask_packages:
+  - 1password
+  - adobe-reader
   - cheatsheet
   - clion
   - docker
