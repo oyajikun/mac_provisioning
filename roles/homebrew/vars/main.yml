@@ -13,8 +13,10 @@ homebrew_packages:
   - graphviz
   - htop-osx
   - jq
+  - libiconv
   - peco
   - { name: ricty, install_options: [powerline, vim-powerline] }
+  - rsync
   - tree
   - { name: vim, install_options: [with-lua] }
   - zsh
