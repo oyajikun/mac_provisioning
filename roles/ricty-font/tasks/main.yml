@@ -1,7 +1,7 @@
 ---
 - name: copy generated font file
   shell: "cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts/"
-  args:
-    creates: ~/Library/Fonts/Ricty-Bold.ttf
-  notify: run fc-cache
+
+- name: delete cache
+  shell: fc-cache -vf
 
