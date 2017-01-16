@@ -28,6 +28,7 @@ homebrew_cask_packages:
   - java
   - macdown
   - ngrok
+  - pycharm
   - slack
   - skitch
   - skype
