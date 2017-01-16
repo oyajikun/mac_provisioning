@@ -23,6 +23,12 @@
 - name: install rbenv by anyenv
   shell: anyenv install -s rbenv
 
+- name: install pyenv by anyenv
+  shell: anyenv install -s pyenv
+
+- name: install pyenv-virtualenv
+  git: repo=https://github.com/yyuu/pyenv-virtualenv.git dest={{ anyenv_dir }}/envs/pyenv/plugins/pyenv-virtualenv version="master"
+
 - name: apply anyenv
   shell: exec $SHELL -L
 
