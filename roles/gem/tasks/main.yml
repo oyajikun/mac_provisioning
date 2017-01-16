@@ -1,0 +1,4 @@
+---
+- name: install ec2list gem package
+  shell: gem install ec2list
+
