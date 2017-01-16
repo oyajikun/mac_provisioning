@@ -16,6 +16,8 @@
     #- vim
     # one time
     #- anyenv
+    # one time
+    #- gem
     #- debug
 
   vars:
