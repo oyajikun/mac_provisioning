@@ -2,8 +2,9 @@
 homebrew_cask_repositories:
   - caskroom/fonts
   - caskroom/versions
-  - sanemat/font
   - homebrew/dupes
+  - homebrew/science
+  - sanemat/font
 
 # Managed Homebrew Cask packages.
 #
