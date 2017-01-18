@@ -1,5 +1,6 @@
 # Tap external Homebrew Cask repositories.
 homebrew_cask_repositories:
+  - caskroom/fonts
   - caskroom/versions
   - sanemat/font
   - homebrew/dupes
@@ -21,6 +22,7 @@ homebrew_cask_packages:
   - dropbox
   - evernote
   - firefox
+  - font-fira-code
   - google-chrome
   - google-drive
   - google-japanese-ime
