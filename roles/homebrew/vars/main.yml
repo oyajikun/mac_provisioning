@@ -10,6 +10,7 @@ homebrew_packages:
   - gibo
   - git
   - git-secrets
+  - { name: gnuplot, install_options: [with-aquaterm, with-x11] }
   - graphviz
   - htop-osx
   - jq

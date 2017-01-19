@@ -9,6 +9,7 @@
 homebrew_cask_packages:
   - 1password
   - adobe-reader
+  - aquaterm
   - cheatsheet
   - clion
   - docker
