@@ -16,7 +16,7 @@ homebrew_packages:
   - jq
   - libiconv
   - peco
-  - ricty
+  - { name: ricty, install_options: [powerline, vim-powerline] }
   - rsync
   - tree
   - { name: vim, install_options: [with-lua] }
