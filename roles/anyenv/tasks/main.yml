@@ -29,6 +29,9 @@
 - name: install pyenv-virtualenv
   git: repo=https://github.com/yyuu/pyenv-virtualenv.git dest={{ anyenv_dir }}/envs/pyenv/plugins/pyenv-virtualenv version="master"
 
+- name: install ndenv by anyenv
+  shell: anyenv install -s ndenv
+
 - name: apply anyenv
   shell: exec $SHELL -L
 
