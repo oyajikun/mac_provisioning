@@ -4,21 +4,14 @@
   become: yes
   become_user: "{{ user }}"
   roles:
-    # one time
     #- homebrew-tap
     #- homebrew-cask
     #- homebrew
-    # one time
     #- git-secrets
-    # one time
     #- homesick
-    # one time
     #- ricty-font
-    # one time
     #- vim
-    # one time
     #- anyenv
-    # one time
     #- gem
     #- debug
 
