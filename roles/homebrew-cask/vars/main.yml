@@ -29,6 +29,7 @@ homebrew_cask_packages:
   - slack
   - skitch
   - skype
+  - the-unarchiver
   - virtualbox
   - webstorm
   - xquartz
