@@ -5,7 +5,7 @@
   become_user: "{{ user }}"
   roles:
     #- homebrew-tap
-    #- homebrew-cask
+    - homebrew-cask
     #- homebrew
     #- git-secrets
     #- homesick
