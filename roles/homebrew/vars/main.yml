@@ -2,13 +2,14 @@ homebrew_packages:
   - lua
   - readline
   - { name: openssl, state: linked, install_options: force }
-  - ansible
-  - apache-spark
+  #- ansible
+  #- apache-spark
   - colordiff
   - coreutils
   - doxygen
+  - { name: fontforge, install_options: use-gcc }
   - gibo
-  - git
+  #- git
   - git-secrets
   - { name: gnuplot, install_options: [with-aquaterm, with-x11] }
   - graphviz
@@ -16,11 +17,11 @@ homebrew_packages:
   - jq
   - libiconv
   - peco
-  - { name: ricty, install_options: [powerline, vim-powerline] }
+  - { name: ricty, install_options: vim-powerline }
   - rsync
   - tree
-  - { name: vim, install_options: [with-lua] }
+  - { name: vim, install_options: with-lua }
   - wget
-  - zsh
-  - zsh-completions
-  - zsh-syntax-highlighting
+  #- zsh
+  #- zsh-completions
+  #- zsh-syntax-highlighting
