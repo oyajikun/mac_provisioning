@@ -7,30 +7,28 @@
 #
 # state choices: [present, absent, installed, uninstalled] (default: present)
 homebrew_cask_packages:
-  - 1password
-  - adobe-reader
+  #- 1password
+  - adobe-acrobat-reader
   - aquaterm
-  - chatwork
+  #- chatwork
   - cheatsheet
-  - clion
   - docker
   - dropbox
   - evernote
   - firefox
   - font-fira-code
-  - gimp
-  - google-chrome
-  - google-drive
+  - fontforge
+  #- gimp
+  - google-backup-and-sync
   - google-japanese-ime
-  - intellij-idea
+  - iterm2
   - java
+  - jetbrains-toolbox
   - macdown
   - ngrok
-  - pycharm
   - slack
   - skitch
-  - skype
+  #- skype
   - the-unarchiver
-  - virtualbox
-  - webstorm
+  #- virtualbox
   - xquartz
