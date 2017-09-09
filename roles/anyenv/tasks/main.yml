@@ -26,8 +26,8 @@
 - name: install pyenv by anyenv
   shell: anyenv install -s pyenv
 
-- name: install pyenv-virtualenv
-  git: repo=https://github.com/yyuu/pyenv-virtualenv.git dest={{ anyenv_dir }}/envs/pyenv/plugins/pyenv-virtualenv version="master"
+#- name: install pyenv-virtualenv
+#  git: repo=https://github.com/yyuu/pyenv-virtualenv.git dest={{ anyenv_dir }}/envs/pyenv/plugins/pyenv-virtualenv version="master"
 
 - name: install ndenv by anyenv
   shell: anyenv install -s ndenv
@@ -35,9 +35,10 @@
 - name: apply anyenv
   shell: exec $SHELL -L
 
-  #- name: exec /usr/libexec/java_home
-  #shell: /usr/libexec/java_home
-  #register: latest_java_home
-  #- name: add latest Java to jenv
-  #shell: jenv add {{ latest_java_home.stdout }}
+#- name: exec /usr/libexec/java_home
+#shell: /usr/libexec/java_home
+#register: latest_java_home
+
+#- name: add latest Java to jenv
+#shell: jenv add {{ latest_java_home.stdout }}
 
