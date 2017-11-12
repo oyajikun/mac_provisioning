@@ -30,7 +30,7 @@ homebrew_cask_packages:
   - ngrok
   - slack
   - skitch
-  #- skype
+  - skype
   - the-unarchiver
   #- virtualbox
   - xquartz
