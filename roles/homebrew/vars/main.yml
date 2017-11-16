@@ -16,6 +16,7 @@ homebrew_packages:
   - htop-osx
   - jq
   - libiconv
+  - mono
   - peco
   - { name: ricty, install_options: [powerline, vim-powerline] }
   - rsync
