@@ -17,6 +17,7 @@ homebrew_cask_packages:
   - docker
   - dropbox
   - evernote
+  - filezilla
   - firefox
   - font-fira-code
   - gimp
