@@ -8,6 +8,7 @@
 # state choices: [present, absent, installed, uninstalled] (default: present)
 homebrew_cask_packages:
   #- 1password
+  - atom
   - adobe-acrobat-reader
   #- android-studio
   - aquaterm
