@@ -8,10 +8,8 @@
 # state choices: [present, absent, installed, uninstalled] (default: present)
 homebrew_cask_packages:
   #- 1password
-  - atom
+  - alfred
   - adobe-acrobat-reader
-  #- android-studio
-  - aquaterm
   #- chatwork
   - cheatsheet
   - docker
@@ -22,17 +20,18 @@ homebrew_cask_packages:
   - font-fira-code
   - fontforge
   #- gimp
-  - google-backup-and-sync
+  #- google-backup-and-sync
   - google-japanese-ime
   - insomniax
   - iterm2
   - java
-  - jetbrains-toolbox
-  - macdown
+  #- jetbrains-toolbox
   - ngrok
-  - slack
   - skitch
   - skype
+  - station
   - the-unarchiver
+  - visual-studio-code
   #- virtualbox
+  - wireshark
   - xquartz
