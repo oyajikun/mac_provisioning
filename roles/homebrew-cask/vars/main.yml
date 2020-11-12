@@ -36,4 +36,5 @@ homebrew_cask_packages:
   - visual-studio-code
   #- virtualbox
   - wireshark
+  - youtube-dl
   - xquartz
