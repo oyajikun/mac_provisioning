@@ -32,7 +32,7 @@ homebrew_cask_packages:
   - ngrok
   - skitch
   - skype
-  - station
+  #- station
   - the-unarchiver
   - visual-studio-code
   #- virtualbox
