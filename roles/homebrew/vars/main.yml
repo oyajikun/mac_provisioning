@@ -21,6 +21,7 @@ homebrew_packages:
   - peco
   - { name: ricty, install_options: vim-powerline }
   - rsync
+  - stack
   - tree
   - { name: vim, install_options: with-lua }
   - wget
